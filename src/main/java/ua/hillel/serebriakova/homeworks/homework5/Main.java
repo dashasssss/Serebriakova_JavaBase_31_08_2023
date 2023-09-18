@@ -14,9 +14,14 @@ public class Main {
         int numArchersLi = 860;
         int numHorsemenLi = 860;
 
+        int numWarriorsMin = (int) (1.5 * numWarriorsLi);
+        int numArchersMin = (int) (1.5 * numArchersLi);
+        int numHorsemenMin = (int) (1.5 * numHorsemenLi);
+
         int totalAttackLi = (attackWarriorLi * numWarriorsLi) + (attackArcherLi * numArchersLi) + (attackHorsemanLi * numHorsemenLi);
+        int totalAttackMin = (attackWarriorMin * numWarriorsMin) + (attackArcherMin * numArchersMin) + (attackHorsemanMin * numHorsemenMin);
 
         System.out.println("Загальний показник атаки династії Лі: " + totalAttackLi);
-        //System.out.println("Загальний показник атаки династії Мінь: " + totalAttackMin);
+        System.out.println("Загальний показник атаки династії Мінь: " + totalAttackMin);
     }
 }
