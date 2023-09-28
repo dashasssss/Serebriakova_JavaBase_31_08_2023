@@ -2,6 +2,8 @@ package ua.hillel.serebriakova.homeworks.homework7;
 
 import java.util.Scanner;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         int randomNumber = (int) (Math.random() * 11);
@@ -13,19 +15,28 @@ public class Main {
 
         for (int i = 1; i <= 5; i++) {
             System.out.print("Спроба " + i + ". Введіть свою догадку: ");
+
+            if (!scanner.hasNextInt()) {
+                System.out.println("Введено некоректне значення. Будь ласка, введіть число.");
+                scanner.next();
+                i--;
+                continue;
+            }
+
             int userGuess = scanner.nextInt();
 
             if (userGuess == randomNumber) {
                 System.out.println("Вітаємо! Ви вгадали число " + randomNumber);
                 return;
             } else if (userGuess < randomNumber) {
-                System.out.println("Число більше. ");
+                System.out.println("Число більше.");
             } else {
-                System.out.println("Число менше. ");
+                System.out.println("Число менше.");
             }
         }
 
         System.out.println("На жаль, ви не вгадали число. Було загадано: " + randomNumber);
     }
 }
+
 
