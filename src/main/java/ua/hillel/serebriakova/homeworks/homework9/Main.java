@@ -1,5 +1,5 @@
 package ua.hillel.serebriakova.homeworks.homework9;
-import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -8,6 +8,9 @@ public class Main {
 
         int[] FirstTeam = new int[25];
         int[] SecondTeam = new int[25];
+
+        int SumAgeFirstTeam = 0;
+        int SumAgeSecondTeam = 0;
 
         for (int i = 0; i < FirstTeam.length; i++) {
             FirstTeam[i]= (int) (Math.random() * (maxAge - minAge + 1)) + minAge;
@@ -37,6 +40,18 @@ public class Main {
             }
         }
 
+        for (int value : FirstTeam) {
+            SumAgeFirstTeam += value;
+        }
 
+        for (int value : SecondTeam) {
+            SumAgeSecondTeam += value;
+        }
+
+        double averageAgeFirstTeam =(double) SumAgeFirstTeam / FirstTeam.length;
+        double averageAgeSecondTeam =(double) SumAgeSecondTeam/ SecondTeam.length;
+
+        System.out.println("Середній вік гравців першої команди: " + Math.round(averageAgeFirstTeam));
+        System.out.println("Середній вік гравців другої команди: " + Math.round(averageAgeSecondTeam));
     }
 }
