@@ -1,5 +1,4 @@
 package ua.hillel.serebriakova.uni.lab21;
-
 import java.util.Arrays;
 
 public class Main {
