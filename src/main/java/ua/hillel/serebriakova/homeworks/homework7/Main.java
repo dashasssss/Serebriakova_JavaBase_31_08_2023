@@ -2,8 +2,6 @@ package ua.hillel.serebriakova.homeworks.homework7;
 
 import java.util.Scanner;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         int randomNumber = (int) (Math.random() * 11);
