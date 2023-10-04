@@ -20,17 +20,16 @@ public class Main {
                 if (scanner.hasNextInt()) {
                     int inputDigit = scanner.nextInt();
 
-                    // Проверка на диапазон от 0 до 9
                     if (inputDigit >= 0 && inputDigit <= 9) {
                         SecondArrNumbers[i] = inputDigit;
                         break;
                     } else {
                         System.out.println("Неверный ввод. Введите цифру от 0 до 9.");
-                        scanner.next(); // Очистка буфера сканнера
+                        scanner.next();
                     }
                 } else {
                     System.out.println("Неверный ввод. Введите цифру от 0 до 9.");
-                    scanner.next(); // Очистка буфера сканнера
+                    scanner.next();
                 }
             }
         }
