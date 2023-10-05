@@ -35,7 +35,6 @@ public class Main {
             }
         }
 
-
         int[][] originalMatrix = new int[M][N];
 
         System.out.println("Початкова матриця:");
