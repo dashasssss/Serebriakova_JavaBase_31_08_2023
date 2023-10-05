@@ -4,12 +4,36 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int M = 0;
+        int N = 0;
 
-        System.out.print("Введіть кількість рядків (M): ");
-        int M = scanner.nextInt();
+        while (M <= 0) {
+            System.out.print("Введіть кількість рядків: ");
+            if (scanner.hasNextInt()) {
+                M = scanner.nextInt();
+                if (M < 0) {
+                    System.out.println("Будь ласка, введіть додатне число для M.");
+                    scanner.nextLine();
+                }
+            } else {
+                System.out.println("Будь ласка, введіть додатне число для M.");
+                scanner.next();
+            }
+        }
 
-        System.out.print("Введіть кількість стовпців (N): ");
-        int N = scanner.nextInt();
+        while (N <= 0) {
+            System.out.print("Введіть кількість стовпців: ");
+            if (scanner.hasNextInt()) {
+                N = scanner.nextInt();
+                if (N < 0) {
+                    System.out.println("Будь ласка, введіть додатне число для N.");
+                    scanner.nextLine();
+                }
+            } else {
+                System.out.println("Будь ласка, введіть додатне число для N.");
+                scanner.next();
+            }
+        }
 
 
         int[][] originalMatrix = new int[M][N];
@@ -17,7 +41,7 @@ public class Main {
         System.out.println("Початкова матриця:");
         for (int i = 0; i < M; i++) {
             for (int j = 0; j < N; j++) {
-                originalMatrix[i][j] =(int) (Math.random() * 11);
+                originalMatrix[i][j] =(int) (Math.random() * 101);
                 System.out.print(originalMatrix[i][j] + "\t");
             }
             System.out.println();
