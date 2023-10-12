@@ -13,7 +13,6 @@ public class Person {
             String personPhoneNumber = "";
             String personCity = "";
 
-
             while (personFirstName.isEmpty()) {
                 System.out.print("Введіть ім'я: ");
                 personFirstName = scanner.nextLine().trim();
@@ -21,7 +20,6 @@ public class Person {
                     System.out.println("Ім'я не може бути пустим. Будь ласка, введіть ще раз.");
                 }
             }
-
 
             while (personLastName.isEmpty()) {
                 System.out.print("Введіть призвіще: ");
@@ -51,7 +49,7 @@ public class Person {
     }
 
     static String personInfo(String name, String  lastName, String city, String tel) {
-        String result ="Зателефонувати громадянину "+name + " " + lastName+ " із міста "+ city +" можна за номером "+ tel;
+        String result ="Зателефонувати громадянину "+ name + " " + lastName+ " із міста "+ city +" можна за номером "+ tel;
         return result;
     }
 }
