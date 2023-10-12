@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Person {
     public static void main(String[] args) {
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 3; i++) {
             Scanner scanner = new Scanner(System.in);
 
             String personFirstName = "";
