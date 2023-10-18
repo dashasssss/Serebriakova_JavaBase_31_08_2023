@@ -38,24 +38,40 @@ public class FitnessUser {
         return firstName;
     }
 
-    public String getLastName() {
-        return lastName;
+    public int getBirthDay() {
+        return birthDay;
     }
 
-    public double getWeight() {
-        return weight;
+    public int getBirthMonth() {
+        return birthMonth;
     }
 
-    public String getBloodPressure() {
-        return bloodPressure;
+    public int getBirthYear() {
+        return birthYear;
     }
 
-    public int getDailySteps() {
-        return dailySteps;
+    public String getEmail() {
+        return email;
     }
 
-    public int getAge() {
-        return age;
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public void setBloodPressure(String bloodPressure) {
+        this.bloodPressure = bloodPressure;
+    }
+
+    public void setDailySteps(int dailySteps) {
+        this.dailySteps = dailySteps;
     }
 
     public void printAccountInfo() {

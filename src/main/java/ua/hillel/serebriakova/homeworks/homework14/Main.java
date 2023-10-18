@@ -17,5 +17,23 @@ public class Main {
         user3.printAccountInfo();
         user4.printAccountInfo();
         user5.printAccountInfo();
+
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+
+        user1.setWeight(80.0);
+        user2.setDailySteps(9000);
+        user3.setBloodPressure("115/75");
+        user4.setDailySteps(12000);
+        user5.setLastName("Doe");
+
+        user1.printAccountInfo();
+        user2.printAccountInfo();
+        user3.printAccountInfo();
+        user4.printAccountInfo();
+        user5.printAccountInfo();
+
     }
 }
+
