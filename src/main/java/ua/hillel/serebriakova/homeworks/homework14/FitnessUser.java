@@ -1,12 +1,12 @@
 package ua.hillel.serebriakova.homeworks.homework14;
 
 public class FitnessUser {
-    private  String firstName;
-    private int birthDay;
-    private int birthMonth;
-    private int birthYear;
-    private String email;
-    private  String phone;
+    private  final String firstName;
+    private  final int birthDay;
+    private  final int birthMonth;
+    private  final int birthYear;
+    private  final String email;
+    private  final String phone;
     private String lastName;
     private double weight;
     private String bloodPressure;
