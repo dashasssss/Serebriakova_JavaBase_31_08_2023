@@ -46,7 +46,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>ua.hillel.serebriakova.homeworks.homework18.Main</mainClass>
+                            <mainClass>ua.hillel.serebriakova.homeworks.homework18.ArrayOperations</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
